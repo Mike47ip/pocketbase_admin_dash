@@ -15,9 +15,16 @@ const Sidebar = () => {
      className="flex items-center flex-col w-20 border-r-2 border-r-custom-slate h-screen"
     >
      <img className="w-10 py-4" src={PG} alt="" />
-     <img className="w-6 py-5 opacity-80" src={chart2} alt="" />
-     <img className="w-6 py-5 opacity-80" src={database} alt="" />
-     <img className="w-6 py-5 opacity-80" src={tools} alt="" />
+     <button className="w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate  focus:border-2 focus:border-black">
+      <img className=" " src={chart2} alt="" />
+     </button>
+     <button className="w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate  focus:border-2 focus:border-black">
+      <img className=" " src={database} alt="" />
+     </button>
+     <button className="w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate  focus:border-2 focus:border-black">
+      <img className=" " src={tools} alt="" />
+     </button>
+
     </div>
 
     <div
@@ -65,10 +72,10 @@ const Sidebar = () => {
        <p className="text-slate-500">MessageReport</p>
       </button>
      </div>
-    <button className="flex justify-center gap-1 items-center hover:border-2 hover:border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
-     <span className="text-md text-lg">+</span>
-     <p className="text-slate-500">New collection</p>
-    </button>
+     <button className="flex justify-center gap-1 items-center hover:border-2 hover:border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
+      <span className="text-md text-lg">+</span>
+      <p className="text-slate-500">New collection</p>
+     </button>
     </div>
    </section>
   </>
