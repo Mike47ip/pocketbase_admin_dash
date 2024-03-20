@@ -32,35 +32,43 @@ const Sidebar = () => {
       />
      </div>
      <div>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={users} alt="" />
-        <p>Users</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Author</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Book</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Luggage</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Messages</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Plans</p>
-      </button> 
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate w-48 focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p>Posts</p>
-      </button> 
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={users} alt="" />
+       <p className="text-slate-500">Users</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Author</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Book</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Luggage</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Messages</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Plans</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
+       <p className="text-slate-500">Posts</p>
+      </button>
+      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <img className="opacity-50 object-contain w-5 " src={mail} alt="" />
+       <p className="text-slate-500">MessageReport</p>
+      </button>
      </div>
+    <button className="flex justify-center gap-1 items-center hover:border-2 hover:border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
+     <span className="text-md text-lg">+</span>
+     <p className="text-slate-500">New collection</p>
+    </button>
     </div>
    </section>
   </>
