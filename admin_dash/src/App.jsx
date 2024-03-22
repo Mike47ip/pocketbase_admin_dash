@@ -1,16 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/navbars/sidebar";
-import Hello from "./pages/hello";
+import Database from "./pages/database";
 
 function App() {
  return (
   <>
    <Router>
-    <div>
+    <div className="flex overflow-x-hidden">
      <Sidebar />
      <Routes>
-      <Route path="/hello" element={<Hello />} />
+      <Route path="/database" element={<Database />} />
       {/* Add other routes as needed */}
      </Routes>
     </div>
