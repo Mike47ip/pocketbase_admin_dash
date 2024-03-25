@@ -8,7 +8,8 @@ import tools from "../../assets/tools.png";
 const Sidebar = () => {
  return (
   <>
-   <section className="flex">
+  
+   <nav className="flex">
     <div
      id="sidebar1"
      className="flex items-center flex-col w-20 border-r-2 border-r-custom-slate h-screen"
@@ -29,9 +30,7 @@ const Sidebar = () => {
       <img className=" " src={tools} alt="" />
      </button>
     </div>
-
-
-   </section>
+   </nav>
   </>
  );
 };

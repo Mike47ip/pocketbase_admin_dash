@@ -7,8 +7,9 @@ function App() {
  return (
   <>
    <Router>
-    <div className="flex overflow-x-hidden">
-     <Sidebar />
+    <div className="flex w-screen overflow-x-hidden">
+ 
+      <Sidebar />
      <Routes>
       <Route path="/database" element={<Database />} />
       {/* Add other routes as needed */}
