@@ -7,6 +7,7 @@ import key from "../assets/key.png";
 import account from "../assets/account.png";
 import image from "../assets/image.png";
 import date from "../assets/date.png";
+import copy from "../assets/copy.png";
 
 const Database = () => {
  return (
@@ -64,7 +65,7 @@ const Database = () => {
       </button>
      </div>
      {/* Compactment 3 */}
-     <div className="flex flex-col w-[75%]">
+     <div className="flex flex-col w-[78%] bg-custom-back">
       <div className="flex justify-between  p-7">
        <div className="Titles flex gap-6  text-lg">
         <h1>Collection</h1>
@@ -103,7 +104,7 @@ const Database = () => {
       </div>
       {/* Table */}
       <table className="table-auto w-full mt-4">
-       <thead className="h-10 border border-b-slate-600">
+       <thead className="h-10">
         <tr className="text-start">
          <th className="text-start w-16">
           {" "}
@@ -116,7 +117,8 @@ const Database = () => {
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={key} alt="" /> <span className="font-medium">id</span>
+           <img className="w-5 object-contain" src={key} alt="" />{" "}
+           <span className="font-medium">id</span>
           </div>
          </th>
          <th className="text-start">
@@ -124,7 +126,7 @@ const Database = () => {
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={account} alt="" />
+           <img className="w-5 object-contain" src={account} alt="" />
            <span className="font-medium">username</span>
           </div>{" "}
          </th>
@@ -134,7 +136,7 @@ const Database = () => {
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={mail} alt="" />
+           <img className="w-5 object-contain" src={mail} alt="" />
            <span className="font-medium">email</span>
           </div>{" "}
          </th>
@@ -144,7 +146,7 @@ const Database = () => {
            className="flex gap-2 opacity-50
          text-start"
           >
-           <span>T</span>
+           <spa className="w-5 object-contain">T</spa>
            <span className="font-medium">name</span>
           </div>{" "}
          </th>
@@ -154,100 +156,129 @@ const Database = () => {
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={image} alt="" />
+           <img className="w-5 object-contain" src={image} alt="" />
            <span className="font-medium">avatar</span>
           </div>{" "}
          </th>
-         <th className="text-start">          <div
+         <th className="text-start">
+          {" "}
+          <div
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={mail} alt="" />
+           <img className="w-5 object-contain" src={mail} alt="" />
            <span className="font-medium">website</span>
-          </div>{" "}</th>
-         <th className="text-start">          <div
+          </div>{" "}
+         </th>
+         <th className="text-start">
+          {" "}
+          <div
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={date} alt="" />
+           <img className="w-5 object-contain" src={date} alt="" />
            <span className="font-medium">created</span>
-          </div>{" "}</th>
-         <th className="text-start">          <div
+          </div>{" "}
+         </th>
+         <th className="text-start">
+          {" "}
+          <div
            className="flex gap-2 opacity-50
          text-start"
           >
-           <img src={date} alt="" />
+           <img className="w-5 object-contain" src={date} alt="" />
            <span className="font-medium">updated</span>
-          </div>{" "}</th>
+          </div>{" "}
+         </th>
         </tr>
        </thead>
        <tbody>
-        <tr>
+        <tr className="border-b border-t border-gray-200 h-14 text-sm ">
          <td>
           <div className="flex items-center justify-center">
            <input className="w-[20px] h-[20px]" type="checkbox" />
           </div>
          </td>
-         <td>JJ2YRU30FBG8MqX</td>
+         <td>
+          <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
+          </span>
+         </td>
          <td>u_fY6TDdqL6JEG4xu</td>
          <td>test3@example.com</td>
          <td>John Doe</td>
+         <td className="text-slate-500">N/A</td>
          <td>N/A</td>
-         <td>N/A</td>
-         <td>2020-01-12 </td>
-         <td className="flex flex-col">
-          <span>2024-04-05</span> <span>20:23:42 UTC</span>
+         <td className="text-xs">2020-01-12 </td>
+         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
+          <span>2024-04-05</span>{" "}
+          <span className="text-slate-500">20:23:42 UTC</span>
          </td>
         </tr>
-        <tr>
+        <tr className="border-b border-gray-200 h-14 text-sm ">
          <td>
           <div className="flex items-center justify-center">
            <input className="w-[20px] h-[20px] text-red-800" type="checkbox" />
           </div>
          </td>
-         <td>JJ2YRU30FBG8MqX</td>
+         <td>
+         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
+          </span>
+         </td>
          <td>u_fY6TDdqL6JEG4xu</td>
          <td>test3@example.com</td>
          <td>N/A</td>
+         <td className="text-slate-500">N/A</td>
          <td>N/A</td>
-         <td>N/A</td>
-         <td>2020-01-12 </td>
-         <td className="flex flex-col">
-          <span>2024-04-05</span> <span>20:23:42 UTC</span>
+         <td className="text-xs">2020-01-12 </td>
+         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
+          <span>2024-04-05</span>{" "}
+          <span className="text-slate-500">20:23:42 UTC</span>
          </td>
         </tr>
-        <tr>
+        <tr className="border-b border-gray-200 h-14 text-sm ">
          <td>
           <div className="flex items-center justify-center">
            <input className="w-[20px] h-[20px]" type="checkbox" />
           </div>
          </td>
-         <td>JJ2YRU30FBG8MqX</td>
+         <td>
+         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
+          </span>
+         </td>
          <td>u_fY6TDdqL6JEG4xu</td>
          <td>test3@example.com</td>
          <td>John Doe</td>
+         <td className="text-slate-500">N/A</td>
          <td>N/A</td>
-         <td>N/A</td>
-         <td>2020-01-12 </td>
-         <td className="flex flex-col">
-          <span>2024-04-05</span> <span>20:23:42 UTC</span>
+         <td className="text-xs">2020-01-12 </td>
+         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
+          <span>2024-04-05</span>{" "}
+          <span className="text-slate-500">20:23:42 UTC</span>
          </td>
         </tr>
-        <tr>
+        <tr className="border-b border-gray-200 h-14 text-sm ">
          <td>
           <div className="flex items-center justify-center">
            <input className="w-[20px] h-[20px]" type="checkbox" />
           </div>
          </td>
-         <td>JJ2YRU30FBG8MqX</td>
+         <td>
+         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
+          </span>
+         </td>
          <td>u_fY6TDdqL6JEG4xu</td>
          <td>test3@example.com</td>
          <td>Jane Doe</td>
+         <td className="text-slate-500">N/A</td>
          <td>N/A</td>
-         <td>N/A</td>
-         <td>2020-01-12 </td>
-         <td className="flex flex-col">
-          <span>2024-04-05</span> <span>20:23:42 UTC</span>
+         <td className="text-xs">2020-01-12 </td>
+         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
+          <span>2024-04-05</span>{" "}
+          <span className="text-slate-500">20:23:42 UTC</span>
          </td>
         </tr>
         {/* Add more rows as needed */}

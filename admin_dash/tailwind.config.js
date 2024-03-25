@@ -10,6 +10,7 @@ export default {
         custom : {
           slate: '#E4E9EC',
           icon: '#162C55',
+          back: '#F8F9FA',
         }
       }
     },
