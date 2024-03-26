@@ -16,7 +16,7 @@ const Database = () => {
     <div className="flex w-screen">
      <div
       id="sidebar2"
-      className="hidden md:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
+      className="hidden lg:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
      >
       <div className="flex justify-center border-b-2 border-custom-slate pb-7 w-full">
        <input
@@ -45,7 +45,7 @@ const Database = () => {
       </div>
       <button className="flex justify-center gap-1 items-center border-2 hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
        <span className="text-md text-lg">+</span>
-       <p className="text-custom-slate">New collection</p>
+       <p>New collection</p>
       </button>
      </div>
      {/* Compactment 3 */}
@@ -89,7 +89,7 @@ const Database = () => {
       {/* Table */}
       <div className="w-full overflow-x-auto mt-4">
        <table className="table-auto w-full">
-        <thead className="h-10">
+        <thead className="h-10  hover:bg-custom-slate cursor-pointer">
          <tr className="text-start">
           <th className="text-start w-16">
            {" "}
@@ -119,7 +119,7 @@ const Database = () => {
            {" "}
            <div
             className="flex gap-2 opacity-50
-         text-start"
+            text-start"
            >
             <img className="w-5 object-contain" src={mail} alt="" />
             <span className="font-medium">email</span>
@@ -139,7 +139,7 @@ const Database = () => {
            {" "}
            <div
             className="flex gap-2 opacity-50
-         text-start"
+            text-start"
            >
             <img className="w-5 object-contain" src={image} alt="" />
             <span className="font-medium">avatar</span>
@@ -149,7 +149,7 @@ const Database = () => {
            {" "}
            <div
             className="flex gap-2 opacity-50
-         text-start"
+            text-start"
            >
             <img className="w-5 object-contain" src={mail} alt="" />
             <span className="font-medium">website</span>
@@ -169,7 +169,7 @@ const Database = () => {
            {" "}
            <div
             className="flex gap-2 opacity-50
-         text-start"
+            text-start"
            >
             <img className="w-5 object-contain" src={date} alt="" />
             <span className="font-medium">updated</span>
@@ -178,7 +178,7 @@ const Database = () => {
          </tr>
         </thead>
         <tbody>
-         <tr className="border-b border-t border-gray-200 h-14 text-sm  ">
+         <tr className="border-b border-t border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
@@ -195,13 +195,15 @@ const Database = () => {
           <td className="pl-3 lg:pl-0">John Doe</td>
           <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
           <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+           2020-01-12{" "}
+          </td>
           <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  ">
+         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
@@ -218,13 +220,15 @@ const Database = () => {
           <td className="pl-3 lg:pl-0">N/A</td>
           <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
           <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+           2020-01-12{" "}
+          </td>
           <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  ">
+         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
@@ -241,13 +245,15 @@ const Database = () => {
           <td className="pl-3 lg:pl-0">John Doe</td>
           <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
           <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+           2020-01-12{" "}
+          </td>
           <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  ">
+         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
@@ -264,7 +270,9 @@ const Database = () => {
           <td className="pl-3 lg:pl-0">Jane Doe</td>
           <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
           <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+           2020-01-12{" "}
+          </td>
           <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
