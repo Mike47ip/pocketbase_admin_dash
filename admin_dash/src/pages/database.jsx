@@ -16,7 +16,7 @@ const Database = () => {
     <div className="flex w-screen">
      <div
       id="sidebar2"
-      className="flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
+      className="hidden md:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
      >
       <div className="flex justify-center border-b-2 border-custom-slate pb-7 w-full">
        <input
@@ -32,23 +32,7 @@ const Database = () => {
        </button>
        <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p className="text-slate-500">Author</p>
-       </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p className="text-slate-500">Book</p>
-       </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p className="text-slate-500">Luggage</p>
-       </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Messages</p>
-       </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-        <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-        <p className="text-slate-500">Plans</p>
        </button>
        <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
@@ -59,38 +43,38 @@ const Database = () => {
         <p className="text-slate-500">MessageReport</p>
        </button>
       </div>
-      <button className="flex justify-center gap-1 items-center hover:border-2 hover:border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
+      <button className="flex justify-center gap-1 items-center border-2 hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
        <span className="text-md text-lg">+</span>
-       <p className="text-slate-500">New collection</p>
+       <p className="text-custom-slate">New collection</p>
       </button>
      </div>
      {/* Compactment 3 */}
-     <div className="flex flex-col w-[78%] bg-custom-back">
+     <div className="flex flex-col w-screen lg:w-[76%] bg-custom-back">
       <div className="flex justify-between  p-7">
-       <div className="Titles flex gap-6  text-lg">
-        <h1>Collection</h1>
+       <div className="Titles flex gap-6 text-md lg:text-lg">
+        <h1 className="text-slate-400">Collection</h1>
         <span>/</span>
         <h2>Users</h2>
         <div>
          <img
-          className="object-contain pt-1 opacity-70 w-5"
+          className="hidden lg:block object-contain pt-1 opacity-70 w-5"
           src={settings}
           alt=""
          />
         </div>
         <div>
          <img
-          className="object-contain pt-1 opacity-70 w-5"
+          className="hidden lg:block object-contain pt-1 opacity-70 w-5"
           src={refresh}
           alt=""
          />
         </div>
        </div>
        <div className="Buttons flex gap-3">
-        <button className="border-2 h-10 text-center border-black px-3 font-semibold rounded-sm text-gray-700">
-         &lt;/&gt; API Review
+        <button className="border-2 h-11 lg:h-12 text-center border-black px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm text-gray-700">
+         <span className="hidden lg:inline">&lt;/&gt; </span> API Review
         </button>
-        <button className="border-2 h-10 text-center border-black px-3 font-semibold rounded-sm bg-black text-white">
+        <button className="border-2 h-11 lg:h-12 text-center border-black px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm bg-black text-white">
          + New Record
         </button>
        </div>
@@ -103,187 +87,193 @@ const Database = () => {
        />
       </div>
       {/* Table */}
-      <table className="table-auto w-full mt-4">
-       <thead className="h-10">
-        <tr className="text-start">
-         <th className="text-start w-16">
-          {" "}
-          <div className="flex items-center justify-center">
-           <input className="w-[20px] h-[20px]" type="checkbox" />
-          </div>
-         </th>
-         <th className="h-14 ">
-          <div
-           className="flex gap-2 opacity-50
+      <div className="w-full overflow-x-auto mt-4">
+       <table className="table-auto w-full">
+        <thead className="h-10">
+         <tr className="text-start">
+          <th className="text-start w-16">
+           {" "}
+           <div className="flex items-center px-5 lg:px-0  justify-center">
+            <input className="w-[17px] h-[17px]" type="checkbox" />
+           </div>
+          </th>
+          <th className="h-14 ">
+           <div
+            className="flex gap-2 opacity-50
+            "
+           >
+            <img className="w-5 object-contain" src={key} alt="" />{" "}
+            <span className="font-medium">id</span>
+           </div>
+          </th>
+          <th className="text-start pl-4 lg:pl-0">
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={key} alt="" />{" "}
-           <span className="font-medium">id</span>
-          </div>
-         </th>
-         <th className="text-start">
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <img className="w-5 object-contain" src={account} alt="" />
+            <span className="font-medium">username</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-3 lg:pl-0">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={account} alt="" />
-           <span className="font-medium">username</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <img className="w-5 object-contain" src={mail} alt="" />
+            <span className="font-medium">email</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-3 lg:pl-0">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={mail} alt="" />
-           <span className="font-medium">email</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <spa className="w-5 object-contain">T</spa>
+            <span className="font-medium">name</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-4 lg:pl-0">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <spa className="w-5 object-contain">T</spa>
-           <span className="font-medium">name</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <img className="w-5 object-contain" src={image} alt="" />
+            <span className="font-medium">avatar</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-8 lg:pl-0">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={image} alt="" />
-           <span className="font-medium">avatar</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <img className="w-5 object-contain" src={mail} alt="" />
+            <span className="font-medium">website</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-7 lg:pl-0">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={mail} alt="" />
-           <span className="font-medium">website</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
+           >
+            <img className="w-5 object-contain" src={date} alt="" />
+            <span className="font-medium">created</span>
+           </div>{" "}
+          </th>
+          <th className="text-start pl-8">
+           {" "}
+           <div
+            className="flex gap-2 opacity-50
          text-start"
-          >
-           <img className="w-5 object-contain" src={date} alt="" />
-           <span className="font-medium">created</span>
-          </div>{" "}
-         </th>
-         <th className="text-start">
-          {" "}
-          <div
-           className="flex gap-2 opacity-50
-         text-start"
-          >
-           <img className="w-5 object-contain" src={date} alt="" />
-           <span className="font-medium">updated</span>
-          </div>{" "}
-         </th>
-        </tr>
-       </thead>
-       <tbody>
-        <tr className="border-b border-t border-gray-200 h-14 text-sm ">
-         <td>
-          <div className="flex items-center justify-center">
-           <input className="w-[20px] h-[20px]" type="checkbox" />
-          </div>
-         </td>
-         <td>
-          <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
-          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
-          </span>
-         </td>
-         <td>u_fY6TDdqL6JEG4xu</td>
-         <td>test3@example.com</td>
-         <td>John Doe</td>
-         <td className="text-slate-500">N/A</td>
-         <td>N/A</td>
-         <td className="text-xs">2020-01-12 </td>
-         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
-          <span>2024-04-05</span>{" "}
-          <span className="text-slate-500">20:23:42 UTC</span>
-         </td>
-        </tr>
-        <tr className="border-b border-gray-200 h-14 text-sm ">
-         <td>
-          <div className="flex items-center justify-center">
-           <input className="w-[20px] h-[20px] text-red-800" type="checkbox" />
-          </div>
-         </td>
-         <td>
-         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
-          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
-          </span>
-         </td>
-         <td>u_fY6TDdqL6JEG4xu</td>
-         <td>test3@example.com</td>
-         <td>N/A</td>
-         <td className="text-slate-500">N/A</td>
-         <td>N/A</td>
-         <td className="text-xs">2020-01-12 </td>
-         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
-          <span>2024-04-05</span>{" "}
-          <span className="text-slate-500">20:23:42 UTC</span>
-         </td>
-        </tr>
-        <tr className="border-b border-gray-200 h-14 text-sm ">
-         <td>
-          <div className="flex items-center justify-center">
-           <input className="w-[20px] h-[20px]" type="checkbox" />
-          </div>
-         </td>
-         <td>
-         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
-          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
-          </span>
-         </td>
-         <td>u_fY6TDdqL6JEG4xu</td>
-         <td>test3@example.com</td>
-         <td>John Doe</td>
-         <td className="text-slate-500">N/A</td>
-         <td>N/A</td>
-         <td className="text-xs">2020-01-12 </td>
-         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
-          <span>2024-04-05</span>{" "}
-          <span className="text-slate-500">20:23:42 UTC</span>
-         </td>
-        </tr>
-        <tr className="border-b border-gray-200 h-14 text-sm ">
-         <td>
-          <div className="flex items-center justify-center">
-           <input className="w-[20px] h-[20px]" type="checkbox" />
-          </div>
-         </td>
-         <td>
-         <span className="flex w-auto justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
-          <img className="w-3 object-contain" src={copy} alt="" /> <span>JJ2YRU30FBG8MqX</span>{" "}
-          </span>
-         </td>
-         <td>u_fY6TDdqL6JEG4xu</td>
-         <td>test3@example.com</td>
-         <td>Jane Doe</td>
-         <td className="text-slate-500">N/A</td>
-         <td>N/A</td>
-         <td className="text-xs">2020-01-12 </td>
-         <td className="flex mt-2 flex-col text-xs items-center justify-center ">
-          <span>2024-04-05</span>{" "}
-          <span className="text-slate-500">20:23:42 UTC</span>
-         </td>
-        </tr>
-        {/* Add more rows as needed */}
-       </tbody>
-      </table>
+           >
+            <img className="w-5 object-contain" src={date} alt="" />
+            <span className="font-medium">updated</span>
+           </div>{" "}
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr className="border-b border-t border-gray-200 h-14 text-sm  ">
+          <td>
+           <div className="flex items-center lg:px-0  justify-center">
+            <input className="w-[17px] h-[17px]" type="checkbox" />
+           </div>
+          </td>
+          <td>
+           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+            <img className="w-3 object-contain" src={copy} alt="" />{" "}
+            <span>JJ2YRU30FBG8MqX</span>{" "}
+           </span>
+          </td>
+          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 lg:pl-0">test3@example.com</td>
+          <td className="pl-3 lg:pl-0">John Doe</td>
+          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
+          <td className="pl-9 lg:pl-0">N/A</td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+           <span>2024-04-05</span>{" "}
+           <span className="text-slate-500">20:23:42 UTC</span>
+          </td>
+         </tr>
+         <tr className="border-b border-gray-200 h-14 text-sm  ">
+          <td>
+           <div className="flex items-center lg:px-0  justify-center">
+            <input className="w-[17px] h-[17px]" type="checkbox" />
+           </div>
+          </td>
+          <td>
+           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+            <img className="w-3 object-contain" src={copy} alt="" />{" "}
+            <span>JJ2YRU30FBG8MqX</span>{" "}
+           </span>
+          </td>
+          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 lg:pl-0">test3@example.com</td>
+          <td className="pl-3 lg:pl-0">N/A</td>
+          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
+          <td className="pl-9 lg:pl-0">N/A</td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+           <span>2024-04-05</span>{" "}
+           <span className="text-slate-500">20:23:42 UTC</span>
+          </td>
+         </tr>
+         <tr className="border-b border-gray-200 h-14 text-sm  ">
+          <td>
+           <div className="flex items-center lg:px-0  justify-center">
+            <input className="w-[17px] h-[17px]" type="checkbox" />
+           </div>
+          </td>
+          <td>
+           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+            <img className="w-3 object-contain" src={copy} alt="" />{" "}
+            <span>JJ2YRU30FBG8MqX</span>{" "}
+           </span>
+          </td>
+          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 lg:pl-0">test3@example.com</td>
+          <td className="pl-3 lg:pl-0">John Doe</td>
+          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
+          <td className="pl-9 lg:pl-0">N/A</td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+           <span>2024-04-05</span>{" "}
+           <span className="text-slate-500">20:23:42 UTC</span>
+          </td>
+         </tr>
+         <tr className="border-b border-gray-200 h-14 text-sm  ">
+          <td>
+           <div className="flex items-center lg:px-0  justify-center">
+            <input className="w-[17px] h-[17px]" type="checkbox" />
+           </div>
+          </td>
+          <td>
+           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+            <img className="w-3 object-contain" src={copy} alt="" />{" "}
+            <span>JJ2YRU30FBG8MqX</span>{" "}
+           </span>
+          </td>
+          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 lg:pl-0">test3@example.com</td>
+          <td className="pl-3 lg:pl-0">Jane Doe</td>
+          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
+          <td className="pl-9 lg:pl-0">N/A</td>
+          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">2020-01-12 </td>
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+           <span>2024-04-05</span>{" "}
+           <span className="text-slate-500">20:23:42 UTC</span>
+          </td>
+         </tr>
+         {/* Add more rows as needed */}
+        </tbody>
+       </table>
+      </div>
      </div>
     </div>
    </section>

@@ -9,7 +9,7 @@ const Sidebar = () => {
  return (
   <>
   
-   <nav className="flex">
+   <nav className="hidden lg:flex">
     <div
      id="sidebar1"
      className="flex items-center flex-col w-20 border-r-2 border-r-custom-slate h-screen"
