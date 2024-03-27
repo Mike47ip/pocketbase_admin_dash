@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/navbars/sidebar";
 import Database from "./pages/database";
 import { Navbar } from "./components/navbars/navbar";
+import Graph from "./pages/graph";
 
 function App() {
  // Define state to track the visibility of the sidebar
@@ -22,6 +23,7 @@ function App() {
      <Sidebar isVisible={sidebarVisible} toggleSidebar={toggleSidebar} />
      <Routes>
       <Route path="/database" element={<Database />} />
+      <Route path="/chart" element={<Graph />} />
       {/* Add other routes as needed */}
      </Routes>
     </div>
