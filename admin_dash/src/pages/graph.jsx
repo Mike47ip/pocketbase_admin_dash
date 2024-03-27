@@ -53,12 +53,12 @@ const Graph = () => {
      </div>
     </div>
     <div id="input" className="flex justify-center items-center">
-       <input
-        type="text"
-        className="border border-gray-300 bg-custom-slate px-3  h-10 rounded-3xl w-[94%] mt-2 text-sm focus:outline-none focus:border-blue-500"
-        placeholder="Search item or filter like  > 0 && data.auth = guess..."
-       />
-      </div>
+     <input
+      type="text"
+      className="border border-gray-300 bg-custom-slate px-3  h-10 rounded-3xl w-[94%] mt-2 text-sm focus:outline-none focus:border-blue-500"
+      placeholder="Search item or filter like  > 0 && data.auth = guess..."
+     />
+    </div>
 
     <div className="w-full p-7">
      <h2>Sample Graph</h2>
