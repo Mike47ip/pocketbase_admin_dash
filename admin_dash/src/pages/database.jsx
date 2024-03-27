@@ -18,10 +18,10 @@ const Database = () => {
       id="sidebar2"
       className="hidden lg:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
      >
-      <div className="flex justify-center border-b-2 border-custom-slate pb-7 w-full">
+      <div className="flex justify-center border-b-2 border-custom-slate pb-7 w-full ">
        <input
         type="text"
-        className="border border-gray-300 bg-custom-slate rounded-md px-3 py-4 h-7 w-48 mt-9 text-sm focus:outline-none focus:border-blue-500"
+        className="border border-gray-300 bg-custom-slate rounded-md px-3 py-4 h-7 w-48 md:w-5/6 mt-9 text-sm focus:outline-none focus:border-blue-500"
         placeholder="Search collection..."
        />
       </div>
@@ -43,13 +43,13 @@ const Database = () => {
         <p className="text-slate-500">MessageReport</p>
        </button>
       </div>
-      <button className="flex justify-center gap-1 items-center border-2 hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3">
+      <button className="flex justify-center gap-1 items-center border-2 hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3 md:w-5/6">
        <span className="text-md text-lg">+</span>
        <p>New collection</p>
       </button>
      </div>
      {/* Compactment 3 */}
-     <div className="flex flex-col w-screen lg:w-[76%] bg-custom-back">
+     <div className="flex flex-col w-screen lg:w-[77%] bg-custom-back">
       <div className="flex justify-between  p-7">
        <div className="Titles flex gap-6 text-md lg:text-lg">
         <h1 className="text-slate-400">Collection</h1>

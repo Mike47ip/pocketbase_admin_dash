@@ -5,6 +5,8 @@ import Sidebar from "./components/navbars/sidebar";
 import Database from "./pages/database";
 import { Navbar } from "./components/navbars/navbar";
 import Graph from "./pages/graph";
+import Settings from "./pages/settings";
+
 
 function App() {
  // Define state to track the visibility of the sidebar
@@ -24,7 +26,7 @@ function App() {
      <Routes>
       <Route path="/database" element={<Database />} />
       <Route path="/chart" element={<Graph />} />
-      {/* Add other routes as needed */}
+      <Route path="/settings" element={<Settings />} />
      </Routes>
     </div>
    </Router>
