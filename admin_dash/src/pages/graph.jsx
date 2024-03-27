@@ -26,9 +26,8 @@ const Graph = () => {
    <div className="flex flex-col w-full">
     <div className="flex justify-between  p-7">
      <div className="Titles flex gap-6 text-md lg:text-lg">
-      <h1 className="text-slate-400">Collection</h1>
+      <h1 className="text-slate-400">Logs</h1>
       <span>/</span>
-      <h2>Users</h2>
       <div>
        <img
         className="hidden lg:block object-contain pt-1 opacity-70 w-5"
@@ -53,6 +52,14 @@ const Graph = () => {
       </button>
      </div>
     </div>
+    <div id="input" className="flex justify-center items-center">
+       <input
+        type="text"
+        className="border border-gray-300 bg-custom-slate px-3  h-10 rounded-3xl w-[94%] mt-2 text-sm focus:outline-none focus:border-blue-500"
+        placeholder="Search item or filter like  > 0 && data.auth = guess..."
+       />
+      </div>
+
     <div className="w-full p-7">
      <h2>Sample Graph</h2>
      <ReactApexChart
