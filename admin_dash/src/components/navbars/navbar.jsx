@@ -4,12 +4,16 @@ import moon from "../../assets/moon.svg";
 import stargo from "../../assets/stargo.svg";
 import notifications from "../../assets/notifications.png";
 
-export const Navbar = ( {toggleSidebar} ) => {
+export const Navbar = ({ toggleSidebar,  }) => {
  return (
   <>
    <nav>
     <div className="flex justify-between p-3 overflow-x-hidden bg-custom-slate lg:hidden">
-     <div onClick={toggleSidebar} id="Menu" className="bg-white rounded-full p-1 cursor-pointer">
+     <div
+      onClick={toggleSidebar}
+      id="Menu"
+      className="bg-white rounded-full p-1 cursor-pointer"
+     >
       <img className="object-contain" src={menu} alt="" />
      </div>
      <div className="flex gap-3">
@@ -28,5 +32,3 @@ export const Navbar = ( {toggleSidebar} ) => {
   </>
  );
 };
-
-

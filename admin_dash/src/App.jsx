@@ -12,15 +12,24 @@ function App() {
  // Define state to track the visibility of the sidebar
  const [sidebarVisible, setSidebarVisible] = useState(false);
 
+  // Define state for dark mode
+  const [darkMode, setDarkMode] = useState(false);
+
  // Define the toggleSidebar function to toggle the visibility of the sidebar
  const toggleSidebar = () => {
   setSidebarVisible(!sidebarVisible);
  };
+
+  // Function to toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
  return (
   <>
    <Router>
-    <Navbar toggleSidebar={toggleSidebar} />
-    <div className="flex w-full overflow-x-hidden">
+    <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+    <div className={`flex w-full overflow-x-hidden ${darkMode ? 'dark' : 'light'}`}>
      {/* Pass sidebarVisible as a prop to the Sidebar component */}
      <Sidebar isVisible={sidebarVisible} toggleSidebar={toggleSidebar} />
      <Routes>
