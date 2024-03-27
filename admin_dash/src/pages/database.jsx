@@ -131,7 +131,7 @@ const Database = () => {
             className="flex gap-2 opacity-50
          text-start"
            >
-            <spa className="w-5 object-contain">T</spa>
+            <span className="w-5 object-contain">T</span>
             <span className="font-medium">name</span>
            </div>{" "}
           </th>
@@ -165,7 +165,7 @@ const Database = () => {
             <span className="font-medium">created</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-8">
+          <th className="text-start pl-8 lg:pl-0">
            {" "}
            <div
             className="flex gap-2 opacity-50
