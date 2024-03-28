@@ -53,11 +53,11 @@ const Sidebar = ({ isVisible, toggleSidebar, darkMode, toggleDarkMode }) => {
         />
        </button>
       </Link>
-      <Link to="/database">
+      <Link to="/">
        <button
         onClick={() => handleButtonClick("database")}
         className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 border-2 ${
-         location.pathname === "/database" && activeButton === "database"
+         location.pathname === "/" && activeButton === "database"
           ? "border-black"
           : ""
         } ${darkMode ? "hover:bg-red-500" : "hover:bg-custom-slate "}`}
