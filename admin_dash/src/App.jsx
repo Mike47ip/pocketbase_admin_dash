@@ -12,6 +12,10 @@ function App() {
  const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const [darkMode, setDarkMode] = useState(false);
+  
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
  const toggleSidebar = () => {
   setSidebarVisible(!sidebarVisible);
