@@ -21,9 +21,6 @@ function App() {
   setSidebarVisible(!sidebarVisible);
  };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
  return (
   <>
