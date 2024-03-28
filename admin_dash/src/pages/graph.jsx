@@ -2,7 +2,7 @@ import ReactApexChart from "react-apexcharts";
 import settings from "../assets/settings.png";
 import refresh from "../assets/refresh.png";
 
-const Graph = () => {
+const Graph = ({darkMode}) => {
  // Define chart options
  const options = {
   chart: {
@@ -44,7 +44,7 @@ const Graph = () => {
       </div>
      </div>
      <div className="Buttons flex gap-3">
-      <button className="border-2 h-11 lg:h-12 text-center border-black px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm text-gray-700">
+      <button className={`border-2 h-11 lg:h-12 text-center  ${darkMode ? "border-white text-white" : "border-black text-gray-700"} px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm`}>
        <span className="hidden lg:inline">&lt;/&gt; </span> API Review
       </button>
       <button className="border-2 h-11 lg:h-12 text-center border-black px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm bg-black text-white">

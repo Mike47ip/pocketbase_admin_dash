@@ -12,6 +12,7 @@ function App() {
  // Define state to track the visibility of the sidebar
  const [sidebarVisible, setSidebarVisible] = useState(false);
 
+
   // Define state for dark mode
   const [darkMode, setDarkMode] = useState(false);
 
@@ -31,11 +32,11 @@ function App() {
     <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
     <div className={`flex w-full overflow-x-hidden ${darkMode ? 'dark' : 'light'}`}>
      {/* Pass sidebarVisible as a prop to the Sidebar component */}
-     <Sidebar isVisible={sidebarVisible} toggleSidebar={toggleSidebar} />
+     <Sidebar isVisible={sidebarVisible} toggleDarkMode={toggleDarkMode} toggleSidebar={toggleSidebar} darkMode={darkMode} />
      <Routes>
-      <Route path="/database" element={<Database />} />
-      <Route path="/chart" element={<Graph />} />
-      <Route path="/settings" element={<Settings />} />
+      <Route path="/database" element={<Database darkMode={darkMode} />} />
+      <Route path="/chart" element={<Graph darkMode={darkMode}/>} />
+      <Route path="/settings" element={<Settings darkMode={darkMode} />} />
      </Routes>
     </div>
    </Router>

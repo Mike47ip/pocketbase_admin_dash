@@ -9,7 +9,7 @@ import image from "../assets/image.png";
 import date from "../assets/date.png";
 import copy from "../assets/copy.png";
 
-const Database = () => {
+const Database = ({darkMode}) => {
  return (
   <>
    <section>
@@ -26,31 +26,31 @@ const Database = () => {
        />
       </div>
       <div>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <button className={`flex justify-start gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={users} alt="" />
         <p className="text-slate-500">Users</p>
        </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <button className={`flex justify-start gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Messages</p>
        </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <button className={`flex justify-start gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Posts</p>
        </button>
-       <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
+       <button className={`flex justify-start gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={mail} alt="" />
         <p className="text-slate-500">MessageReport</p>
        </button>
       </div>
-      <button className="flex justify-center gap-1 items-center border-2 hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3 md:w-5/6">
+      <button className={`flex justify-center gap-1 items-center border-2 ${darkMode ? "bg-white text-black" : ""} hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3 md:w-5/6`}>
        <span className="text-md text-lg">+</span>
        <p>New collection</p>
       </button>
      </div>
      {/* Compactment 3 */}
-     <div className="flex flex-col w-screen lg:w-[77%] bg-custom-back">
-      <div className="flex justify-between  p-7">
+     <div className={`flex  flex-col w-screen lg:w-[77%] ${darkMode ? "bg-custom-dark" : "bg-custom-back"}`}>
+      <div className="flex justify-between p-7 flex-col  lg:flex-row">
        <div className="Titles flex gap-6 text-md lg:text-lg">
         <h1 className="text-slate-400">Collection</h1>
         <span>/</span>
@@ -70,7 +70,7 @@ const Database = () => {
          />
         </div>
        </div>
-       <div className="Buttons flex gap-3">
+       <div className="Buttons flex gap-3 pr-[10%] mt-9 lg:mt-0 lg:pr-0"> 
         <button className="border-2 h-11 lg:h-12 text-center border-black px-2 lg:px-3 text-[12px] lg:text-base font-semibold rounded-sm text-gray-700">
          <span className="hidden lg:inline">&lt;/&gt; </span> API Review
         </button>
@@ -90,7 +90,7 @@ const Database = () => {
       <div className="w-full overflow-x-auto mt-4">
        <table className="table-auto w-full">
         <thead className="h-10  hover:bg-custom-slate cursor-pointer">
-         <tr className="text-start">
+         <tr className={`text-start ${darkMode ? "hover:bg-red-500 cursor-pointer" : "hover:bg-custom-slate"}`}>
           <th className="text-start w-16">
            {" "}
            <div className="flex items-center px-5 lg:px-0  justify-center">
@@ -178,14 +178,14 @@ const Database = () => {
          </tr>
         </thead>
         <tbody>
-         <tr className="border-b border-t border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
+         <tr className={`border-b border-t ${darkMode ? "hover:bg-red-500 cursor-pointer !text-white" : "hover:bg-custom-slate"} h-14 text-sm cursor-pointer`}>
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
            </div>
           </td>
           <td>
-           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <span className={`flex w- w-[126px] justify-center ${darkMode ? "text-black" : ""} gap-1 text-xs  py-1 rounded-2xl bg-slate-200`}>
             <img className="w-3 object-contain" src={copy} alt="" />{" "}
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
@@ -203,14 +203,14 @@ const Database = () => {
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
+         <tr className={`border-b border-t ${darkMode ? "hover:bg-red-500 cursor-pointer !text-white" : "hover:bg-custom-slate"} h-14 text-sm cursor-pointer`}>
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
            </div>
           </td>
           <td>
-           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <span className={`flex w- w-[126px] justify-center ${darkMode ? "text-black" : ""} gap-1 text-xs  py-1 rounded-2xl bg-slate-200`}>
             <img className="w-3 object-contain" src={copy} alt="" />{" "}
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
@@ -228,14 +228,14 @@ const Database = () => {
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
+         <tr className={`border-b border-t ${darkMode ? "hover:bg-red-500 cursor-pointer !text-white" : "hover:bg-custom-slate"} h-14 text-sm cursor-pointer`}>
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
            </div>
           </td>
           <td>
-           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <span className={`flex w- w-[126px] justify-center ${darkMode ? "text-black" : ""} gap-1 text-xs  py-1 rounded-2xl bg-slate-200`}>
             <img className="w-3 object-contain" src={copy} alt="" />{" "}
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
@@ -253,14 +253,14 @@ const Database = () => {
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
          </tr>
-         <tr className="border-b border-gray-200 h-14 text-sm  hover:bg-custom-slate cursor-pointer">
+         <tr className={`border-b border-t ${darkMode ? "hover:bg-red-500 cursor-pointer !text-white" : "hover:bg-custom-slate"} h-14 text-sm cursor-pointer`}>
           <td>
            <div className="flex items-center lg:px-0  justify-center">
             <input className="w-[17px] h-[17px]" type="checkbox" />
            </div>
           </td>
           <td>
-           <span className="flex w- w-[126px] justify-center gap-1 text-xs  py-1 rounded-2xl bg-slate-200">
+          <span className={`flex w- w-[126px] justify-center ${darkMode ? "text-black" : ""} gap-1 text-xs  py-1 rounded-2xl bg-slate-200`}>
             <img className="w-3 object-contain" src={copy} alt="" />{" "}
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
