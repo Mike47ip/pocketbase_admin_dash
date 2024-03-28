@@ -87,8 +87,8 @@ const Settings = ({darkMode}) => {
      <div id="input" className="flex justify-center items-center"></div>
      {/* Input */}
      <div className={`w-[80%] mx-auto`}>
-      <div className={`flex gap-7 justify-center ${darkMode ? "bg-custom-dark" : "bg-custom-back"} shadow-md rounded px-8 pt-6 pb-8 mb-4`}>
-       <div className="mb-4 w-[40%]">
+      <div className={`flex gap-7 justify-center flex-col lg:flex-row  ${darkMode ? "bg-custom-dark" : "bg-custom-back"} shadow-md rounded px-8 pt-6 pb-8 mb-4`}>
+       <div className="mb-4 w-[90%] lg:w-[40%]">
         <label
          className="block text-gray-700 text-sm font-bold mb-2"
          htmlFor="appName"
@@ -101,7 +101,7 @@ const Settings = ({darkMode}) => {
          type="text"
         />
        </div>
-       <div className="mb-6 w-[40%]">
+       <div className="mb-6 w-[90%] lg:w-[40%] ">
         <label
          className="block text-gray-700 text-sm font-bold mb-2"
          htmlFor="appUrl"
