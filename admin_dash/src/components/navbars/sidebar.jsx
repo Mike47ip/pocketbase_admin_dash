@@ -84,7 +84,7 @@ const Sidebar = ({ isVisible, toggleSidebar, darkMode, toggleDarkMode }) => {
        </button>
       </Link>
      </div>
-     <div className="bg-white rounded-full p-1 mb-5 cursor-pointer">
+     <div className="bg-white rounded-full hidden lg:block p-1 mb-5 cursor-pointer">
       <img
        className="object-contain"
        onClick={toggleDarkMode}

@@ -99,7 +99,6 @@ const Settings = ({darkMode}) => {
          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
          id="appName"
          type="text"
-         placeholder="Application name"
         />
        </div>
        <div className="mb-6 w-[40%]">
@@ -113,7 +112,6 @@ const Settings = ({darkMode}) => {
          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
          id="appUrl"
          type="text"
-         placeholder="Application URL"
         />
        </div>
       </div>
