@@ -88,7 +88,7 @@ const Database = ({darkMode}) => {
       </div>
       {/* Table */}
       <div className="w-full overflow-x-auto mt-4">
-       <table className="table-auto w-full">
+       <table className="table-auto w-full lg:ml-3">
         <thead className="h-10  hover:bg-custom-slate cursor-pointer">
          <tr className={`text-start ${darkMode ? "hover:bg-red-500 cursor-pointer" : "hover:bg-custom-slate"}`}>
           <th className="text-start w-16">
@@ -106,7 +106,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">id</span>
            </div>
           </th>
-          <th className="text-start pl-4 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-4">
            <div
             className="flex gap-2 opacity-50
          text-start"
@@ -115,7 +115,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">username</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-3 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-4">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -125,7 +125,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">email</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-3 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-4">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -135,7 +135,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">name</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-4 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-4">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -145,7 +145,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">avatar</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-8 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-9">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -155,7 +155,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">website</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-7 lg:pl-0">
+          <th className="text-start pl-4 xl:!pl-0 lg:!pl-9">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -165,7 +165,7 @@ const Database = ({darkMode}) => {
             <span className="font-medium">created</span>
            </div>{" "}
           </th>
-          <th className="text-start pl-8 lg:pl-0">
+          <th className="ttext-start pl-4 xl:!pl-0 lg:!pl-9">
            {" "}
            <div
             className="flex gap-2 opacity-50
@@ -190,15 +190,15 @@ const Database = ({darkMode}) => {
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
           </td>
-          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
-          <td className="pl-3 lg:pl-0">test3@example.com</td>
-          <td className="pl-3 lg:pl-0">John Doe</td>
-          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
-          <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">test3@example.com</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">John Doe</td>
+          <td className="pl-4 xl:!pl-0 lg:!pl-4 text-slate-500">N/A</td>
+          <td className="pl-5 xl:!pl-0 lg:!pl-9 ">N/A</td>
+          <td className="text-xs pl-6 whitespace-nowrap xl:!pl-0 lg:!pl-9">
            2020-01-12{" "}
           </td>
-          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 xl:!pl-0 lg:!pl-9 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
@@ -215,15 +215,15 @@ const Database = ({darkMode}) => {
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
           </td>
-          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
-          <td className="pl-3 lg:pl-0">test3@example.com</td>
-          <td className="pl-3 lg:pl-0">N/A</td>
-          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
-          <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">test3@example.com</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">N/A</td>
+          <td className="pl-4 xl:!pl-0 lg:!pl-4 text-slate-500">N/A</td>
+          <td className="pl-5 xl:!pl-0 lg:!pl-9 ">N/A</td>
+          <td className="text-xs pl-6 whitespace-nowrap xl:!pl-0 lg:!pl-9">
            2020-01-12{" "}
           </td>
-          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 xl:!pl-0 lg:!pl-9 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
@@ -240,15 +240,15 @@ const Database = ({darkMode}) => {
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
           </td>
-          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
-          <td className="pl-3 lg:pl-0">test3@example.com</td>
-          <td className="pl-3 lg:pl-0">John Doe</td>
-          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
-          <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">test3@example.com</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">John Doe</td>
+          <td className="pl-4 xl:!pl-0 lg:!pl-4 text-slate-500">N/A</td>
+          <td className="pl-5 xl:!pl-0 lg:!pl-9 ">N/A</td>
+          <td className="text-xs pl-6 whitespace-nowrap xl:!pl-0 lg:!pl-9">
            2020-01-12{" "}
           </td>
-          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 xl:!pl-0 lg:!pl-9 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
@@ -265,15 +265,15 @@ const Database = ({darkMode}) => {
             <span>JJ2YRU30FBG8MqX</span>{" "}
            </span>
           </td>
-          <td className="pl-3 lg:pl-0">u_fY6TDdqL6JEG4xu</td>
-          <td className="pl-3 lg:pl-0">test3@example.com</td>
-          <td className="pl-3 lg:pl-0">Jane Doe</td>
-          <td className="pl-4 lg:pl-0 text-slate-500">N/A</td>
-          <td className="pl-9 lg:pl-0">N/A</td>
-          <td className="text-xs pl-8 whitespace-nowrap lg:pl-0">
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">u_fY6TDdqL6JEG4xu</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">test3@example.com</td>
+          <td className="pl-3 xl:!pl-0 lg:!pl-4">Jane Doe</td>
+          <td className="pl-4 xl:!pl-0 lg:!pl-4 text-slate-500">N/A</td>
+          <td className="pl-5 xl:!pl-0 lg:!pl-9 ">N/A</td>
+          <td className="text-xs pl-6 whitespace-nowrap xl:!pl-0 lg:!pl-9">
            2020-01-12{" "}
           </td>
-          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 lg:pl-0 text-xs items-center justify-center ">
+          <td className="flex mt-2 flex-col whitespace-nowrap pl-9 xl:!pl-0 lg:!pl-9 text-xs items-center justify-center ">
            <span>2024-04-05</span>{" "}
            <span className="text-slate-500">20:23:42 UTC</span>
           </td>
