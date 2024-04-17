@@ -26,24 +26,24 @@ const Database = ({darkMode}) => {
        />
       </div>
       <div className="flex w-[100%] flex-col justify-center items-center">
-       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-[5px]`}>
         <img className="opacity-50 object-contain w-5 " src={users} alt="" />
         <p className="text-slate-500">Users</p>
        </button>
-       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-[5px]`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Messages</p>
        </button>
-       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-[5px]`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Posts</p>
        </button>
-       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-[5px]`}>
         <img className="opacity-50 object-contain w-5 " src={mail} alt="" />
         <p className="text-slate-500">MessageReport</p>
        </button>
       </div>
-      <button className={`flex justify-center gap-1 items-center border-2 ${darkMode ? "bg-white text-black" : ""} hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-3 md:w-5/6`}>
+      <button className={`flex justify-center gap-1 items-center border-2 ${darkMode ? "bg-white text-black" : ""} hover:bg-custom-slate border-slate-900 focus:border-slate-900 f w-48 p-2 rounded-md h-9 my-[5px] md:w-5/6`}>
        <span className="text-md text-lg">+</span>
        <p>New collection</p>
       </button>
