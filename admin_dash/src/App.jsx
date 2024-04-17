@@ -28,6 +28,7 @@ function App() {
     <Navbar toggleSidebar={toggleSidebar} toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
     <div className={`flex w-full overflow-x-hidden ${darkMode ? 'dark' : 'light'}`}>
      <Sidebar isVisible={sidebarVisible} toggleDarkMode={toggleDarkMode} toggleSidebar={toggleSidebar} darkMode={darkMode} />
+     {/* <div className="w-20 hidden h-screen lg:flex"></div> */}
      <Routes>
       <Route path="/" element={<Database darkMode={darkMode} />} />
       <Route path="/chart" element={<Graph darkMode={darkMode}/>} />

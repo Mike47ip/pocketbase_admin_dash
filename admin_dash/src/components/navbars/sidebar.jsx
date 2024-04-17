@@ -30,60 +30,61 @@ const Sidebar = ({ isVisible, toggleSidebar, darkMode, toggleDarkMode }) => {
 
  return (
   <>
-   <nav className={`${sidebarClass} `}>
+   <nav className={`${sidebarClass} h-screen`}>
     <div
      id="sidebar1"
-     className="flex justify-between items-center flex-col w-20 border-r-2 border-r-custom-slate h-screen"
+     className="flex justify-between items-center flex-col  w-20 "
     >
-     <div className="flex flex-col items-center">
-      <img className="w-10 py-4" src={PG} alt="" />
-      <Link to="/chart">
-       <button
-        onClick={() => handleButtonClick("chart")}
-        className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate border-2 ${
-         location.pathname === "/chart" && activeButton === "chart"
-          ? "border-black"
-          : ""
-        } ${darkMode ? "  hover:bg-red-500" : "  hover:bg-custom-slate "}`}
-       >
-        <img
-         className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
-         src={chart2}
-         alt=""
-        />
-       </button>
-      </Link>
-      <Link to="/">
-       <button
-        onClick={() => handleButtonClick("database")}
-        className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 border-2 ${
-         location.pathname === "/" && activeButton === "database"
-          ? "border-black"
-          : ""
-        } ${darkMode ? "hover:bg-red-500" : "hover:bg-custom-slate "}`}
-       >
-        <img
-         className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
-         src={database}
-         alt=""
-        />
-       </button>
-      </Link>
-      <Link to="/settings">
-       <button
-        onClick={() => handleButtonClick("tools")}
-        className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate border-2 ${
-         activeButton === "tools" ? "border-black" : ""
-        } ${darkMode ? "  hover:bg-red-500" : "  hover:bg-custom-slate "} `}
-       >
-        <img
-         className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
-         src={tools}
-         alt=""
-        />
-       </button>
-      </Link>
-     </div>
+     <div className="flex flex-col items-center justify-between  w-20 fixed border-r-2 border-r-custom-slate h-screen">
+      <div className="flex flex-col justify-center">
+       <img className="w-10 py-4 " src={PG} alt="" />
+       <Link to="/chart">
+        <button
+         onClick={() => handleButtonClick("chart")}
+         className={` top-12 w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate border-2 ${
+          location.pathname === "/chart" && activeButton === "chart"
+           ? "border-black"
+           : ""
+         } ${darkMode ? "  hover:bg-red-500" : "  hover:bg-custom-slate "}`}
+        >
+         <img
+          className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
+          src={chart2}
+          alt=""
+         />
+        </button>
+       </Link>
+       <Link to="/">
+        <button
+         onClick={() => handleButtonClick("database")}
+         className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 border-2 ${
+          location.pathname === "/" && activeButton === "database"
+           ? "border-black"
+           : ""
+         } ${darkMode ? "hover:bg-red-500" : "hover:bg-custom-slate "}`}
+        >
+         <img
+          className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
+          src={database}
+          alt=""
+         />
+        </button>
+       </Link>
+       <Link to="/settings">
+        <button
+         onClick={() => handleButtonClick("tools")}
+         className={`w-11 object-contain p-2 rounded-xl my-3 opacity-80 hover:bg-custom-slate border-2 ${
+          activeButton === "tools" ? "border-black" : ""
+         } ${darkMode ? "  hover:bg-red-500" : "  hover:bg-custom-slate "} `}
+        >
+         <img
+          className={` ${darkMode ? "filter brightness-0 invert" : ""}`}
+          src={tools}
+          alt=""
+         />
+        </button>
+       </Link>
+      </div>
      <div className="bg-white rounded-full hidden lg:block p-1 mb-5 cursor-pointer">
       <img
        className="object-contain"
@@ -91,6 +92,7 @@ const Sidebar = ({ isVisible, toggleSidebar, darkMode, toggleDarkMode }) => {
        src={darkMode ? sun : moon} // Conditionally render sun or moon icon based on darkMode state
        alt={darkMode ? "Sun" : "Moon"} // Set alt text accordingly
       />
+     </div>
      </div>
     </div>
    </nav>
