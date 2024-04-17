@@ -25,20 +25,20 @@ const Database = ({darkMode}) => {
         placeholder="Search collection..."
        />
       </div>
-      <div>
-       <button className={`flex justify-start md:ml-5  gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+      <div className="flex w-[100%] flex-col justify-center items-center">
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={users} alt="" />
         <p className="text-slate-500">Users</p>
        </button>
-       <button className={`flex justify-start md:ml-5  gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Messages</p>
        </button>
-       <button className={`flex justify-start md:ml-5  gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
         <p className="text-slate-500">Posts</p>
        </button>
-       <button className={`flex justify-start md:ml-5  gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
+       <button className={`flex justify-start  w-[87%] gap-1 items-center ${darkMode ? "bg-white" : ""} hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3`}>
         <img className="opacity-50 object-contain w-5 " src={mail} alt="" />
         <p className="text-slate-500">MessageReport</p>
        </button>
