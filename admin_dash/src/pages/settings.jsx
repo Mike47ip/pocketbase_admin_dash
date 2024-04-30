@@ -12,54 +12,6 @@ const Settings = ({ darkMode }) => {
      darkMode ? "bg-custom-dark " : "border-r-custom-slate"
     }`}
    >
-    {/* <div
-     id="sidebar2"
-     className="hidden md:hidden lg:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[17%]"
-    >
-     <h2 className="text-slate-500 !text-left font-medium pt-6">Settings</h2>
-     <div>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={users} alt="" />
-       <p className="text-slate-500">Application</p>
-      </button>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-       <p className="text-slate-500">Mail settings</p>
-      </button>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-       <p className="text-slate-500">File storage</p>
-      </button>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={mail} alt="" />
-       <p className="text-slate-500">Backups</p>
-      </button>
-     </div>
-     <h2 className="text-slate-500 !text-left font-medium pt-8">Sync</h2>
-     <div>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={users} alt="" />
-       <p className="text-slate-500">Export collections</p>
-      </button>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-       <p className="text-slate-500">More collections</p>
-      </button>
-     </div>
-     <h2 className="text-slate-500 !text-left font-medium pt-8">
-      Authentication
-     </h2>
-     <div>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={users} alt="" />
-       <p className="text-slate-500">Auth providers</p>
-      </button>
-      <button className="flex justify-start gap-1 items-center hover:bg-custom-slate focus:bg-custom-slate w-48 p-2 rounded-md h-9 my-3">
-       <img className="opacity-50 object-contain w-5 " src={folder} alt="" />
-       <p className="text-slate-500">Token options</p>
-      </button>
-     </div>
-    </div> */}
     <div
      id="sidebar2"
      className="hidden lg:flex items-center flex-col border-r-2 border-r-custom-slate h-screen w-[18.5%]"
