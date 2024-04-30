@@ -90,11 +90,11 @@ const Graph = ({ darkMode }) => {
        >
         <th className="text-start w-16">
          {" "}
-         <div className="flex items-center px-5 lg:px-0  justify-center">
+         <div className="flex items-center px-5   justify-center">
           <input className="w-[17px] h-[17px]" type="checkbox" />
          </div>
         </th>
-        <th className="h-14 ">
+        <th className="h-14">
          <div
           className="flex gap-2 opacity-50
             "
